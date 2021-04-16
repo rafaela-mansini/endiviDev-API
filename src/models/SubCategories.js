@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const { Schema } = mongoose;
-const SubCategories = new Schema({
+const SubCategoriesSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -14,4 +14,6 @@ const SubCategories = new Schema({
     ref: 'Categories',
     required: true
   }
-})
+});
+
+export default mongoose.model('SubCategories', SubCategoriesSchema);

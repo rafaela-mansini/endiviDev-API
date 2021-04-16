@@ -27,3 +27,5 @@ const SpendsSchema = new Schema({
     required: true
   }
 });
+
+export default mongoose.model('Spends', SpendsSchema);

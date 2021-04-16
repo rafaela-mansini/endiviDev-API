@@ -12,3 +12,4 @@ const ProvidersSchema = new Schema({
   }
 });
 
+export default mongoose.model('Providers', ProvidersSchema);

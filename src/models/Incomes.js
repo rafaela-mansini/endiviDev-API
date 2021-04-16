@@ -25,3 +25,5 @@ const IncomesSchema = new Schema({
     required: true
   }
 });
+
+export default mongoose.model('Incomes', IncomesSchema);

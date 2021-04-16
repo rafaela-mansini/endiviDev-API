@@ -7,3 +7,5 @@ const CategoriesSchema= new Schema({
     required: true
   }
 });
+
+export default mongoose.model('Categories', CategoriesSchema);
