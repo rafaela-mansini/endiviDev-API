@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const connection = () => {
+const Connection = () => {
   mongoose.connect(
     process.env.MONGODB_URI,
     { useNewUrlParser: true, useUnifiedTopology: true },
@@ -15,4 +15,4 @@ const connection = () => {
   )
 }
 
-export default connection
+export default Connection

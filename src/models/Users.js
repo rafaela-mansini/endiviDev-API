@@ -7,3 +7,5 @@ const UsersSchema = new Schema({
     required: true
   }
 });
+
+export default mongoose.model('Users', UsersSchema);
